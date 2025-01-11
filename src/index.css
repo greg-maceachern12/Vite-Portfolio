@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-notion-default antialiased;
+  }
+}
+
+@layer components {
+  .notion-card {
+    @apply bg-white border border-gray-200 rounded-lg transition-all duration-300;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.95)
+    );
+    backdrop-filter: blur(8px);
+  }
+  
+  .notion-card:hover {
+    @apply shadow-lg;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(236, 246, 255, 0.9),
+      rgba(255, 240, 245, 0.9)
+    );
+  }
+  
+  .notion-page-title {
+    @apply text-4xl font-bold tracking-tight;
+    background: linear-gradient(
+      120deg,
+      #2F3437 0%,
+      #2F3437 85%,
+      #4F46E5 95%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .notion-link {
+    @apply text-notion-default px-1 rounded transition-colors;
+    background: linear-gradient(
+      to right,
+      transparent,
+      transparent 50%,
+      rgba(230, 240, 255, 0.5) 50%,
+      rgba(230, 240, 255, 0.5)
+    );
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.3s ease;
+  }
+
+  .notion-link:hover {
+    background-position: 0 0;
+  }
+
+  .iridescent-bg {
+    background: linear-gradient(
+      120deg,
+      rgba(236, 246, 255, 0.2),
+      rgba(255, 240, 245, 0.2),
+      rgba(255, 251, 235, 0.2)
+    );
+  }
+
+  .skill-tag {
+    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-all duration-300;
+    background: linear-gradient(
+      120deg,
+      rgba(239, 246, 255, 0.6),
+      rgba(254, 242, 242, 0.6)
+    );
+  }
+
+  .skill-tag:hover {
+    background: linear-gradient(
+      120deg,
+      rgba(239, 246, 255, 0.8),
+      rgba(254, 242, 242, 0.8)
+    );
+  }
+}
