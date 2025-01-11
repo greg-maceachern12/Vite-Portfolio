@@ -5,7 +5,7 @@ import { projects } from '../../data/projects';
 export const Projects = () => {
   return (
     <div className="space-y-8">
-      <p className="text-notion-gray">
+      <p className="text-gray-600">
         I love turning side projects into side hustles and exploring new
         exciting tech outside of the bounds of my day job.
         <br /><br />

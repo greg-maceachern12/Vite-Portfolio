@@ -5,18 +5,21 @@ export const projects = {
         icon: "/assets/logo.png",
         description: "Text-to-image GenAI application transforming e-books into vivid picture books.",
         link: "https://www.visuai.io",
+        isFavorite: true
       },
       {
         title: "Music Milk",
         icon: "/assets/musicmilk.png",
         description: "Platform to host mashups and long-form mixtapes",
         link: "https://musicmilk.co",
+        isFavorite: true
       },
       {
         title: "Primer AI",
         icon: "/assets/primer.png",
         description: "AI Generated Learning Platform generating structured and organized self service learning modules for any topic",
         link: "https://primerai.io",
+        isFavorite: true
       },
       {
         title: "Digital Music Consultancy",
@@ -32,7 +35,7 @@ export const projects = {
       },
       {
         title: "Moolah AI",
-        icon: "/assets/Moolah.png",
+        icon: "/assets/moolah.png",
         description: "On device analysis and insights of personal spending",
         link: "https://moolah.money",
       }
@@ -55,6 +58,12 @@ export const projects = {
         icon: "/assets/eatro.png",
         description: "iOS App to modify any recipe. An experiment into AI wrapper apps.",
         link: "https://eatro.co",
+      },
+      {
+        title: "Github",
+        icon: "/assets/github.png",
+        description: "I create new repos all the time with pitches and thoughts in the README.",
+        link: "https://github.com/greg-maceachern12?tab=repositories",
       }
     ]
   };
