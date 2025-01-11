@@ -18,16 +18,18 @@ export const ProjectCard = ({ icon, title, description, link, isFavorite }) => {
           <span className="text-xs text-gray-500">Personal Fav</span>
         </div>
       )}
-      <div className="flex items-start gap-3 relative">
-        <div className="relative">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 relative">
+        <div className="relative flex-shrink-0">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-pink-100/20 to-yellow-100/20 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          <img
-            src={icon}
-            alt={title}
-            className="w-10 h-10 object-contain rounded relative z-10"
-          />
+          <div className="w-16 h-16 sm:w-14 sm:h-14 relative z-10 rounded overflow-hidden">
+            <img
+              src={icon}
+              alt={title}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="font-medium mb-1 text-gray-900">{title}</h3>
           <p className="text-gray-600 text-sm">{description}</p>
         </div>
