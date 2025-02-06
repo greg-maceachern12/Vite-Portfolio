@@ -17,7 +17,7 @@ export const About = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-100/20 via-pink-100/20 to-yellow-100/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <img
-              src="/assets/head3.jpg"
+              src="/assets/head2.png"
               alt="Greg MacEachern"
               className="w-24 h-24 rounded-lg object-cover border border-gray-200 relative z-10"
             />
@@ -46,11 +46,11 @@ export const About = () => {
           <div className="relative z-10">
             <div className="flex items-center gap-2 text-gray-600 mb-3">
               <MapPin size={16} className="text-gray-500" />
-              <p>New York City, USA</p>
+              <p>New York City, USA • Green Card Holder</p>
             </div>
             <div className="flex items-center gap-2 text-gray-600">
               <GraduationCap size={16} className="text-gray-500" />
-              <p>Computer Engineering • Green Card Holder</p>
+              <p>Computer Engineering</p>
             </div>
           </div>
         </motion.div>
