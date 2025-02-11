@@ -24,7 +24,7 @@ export const About = () => {
           </motion.div>
           <div>
             <h2 className="text-xl font-semibold text-gray-900">Product Manager & Engineer</h2>
-            <p className="text-gray-500 mt-1">Building delightful products at Range</p>
+            <p className="text-gray-500 mt-1">Building products at Range</p>
           </div>
         </div>
         
